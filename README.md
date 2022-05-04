@@ -58,6 +58,12 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... 
   * usado: https://tailwindcss.com/docs/installation/using-postcss > react precisa do PostCSS
 * Tailwind tem ResetCSS
 * HeadlessUI parece ser muito bom...
+* caso for utilizar muitos componentes parecidos repetidamente pode se criar um array/objeto e transforma-lo em html, assim no html em sí só terá a desestruturação deste.
+* Object.entries()
+* `type example = typeof {X: {...}}`
+* Screenshot > html2canvas
+* colcoar o ! no final de um valor diz para confir aque ele não será nunca nulo
+  * EX: `document.querySelector('body')!` ou seja, você diz que sempre vai existir o body.
 
 
 
@@ -81,6 +87,10 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... 
 
 * `npm install phosphor-react` > icones utilizados
 * `npm install @headlessui/react` > acessibilidade
+* `npm install -D @tailwindcss/forms` > tailwind para formulários (coloca nos plugins)
+* `npm install -D tailwind-scrollbar` > muda a scrollbar (coloque nos plugins)
+* `npm install html2canvas` > blibioteca para o screenshot
+* ``
 
 ---
 ## Aula REACT NATIVE:
@@ -97,6 +107,7 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... 
 
 ## Desafios
 * #NextLevel
+* #NeverStopLearning
 
 ## Licença:
 Note que este projeto está sob a licensa MIT. Veja o arquivo para mais detalhes: <a href="/LICENSE">LICENSE</a>

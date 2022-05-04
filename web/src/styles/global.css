@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* gb-[#2548f5] > custom background */
+body {
+  @apply bg-[#09090a] text-zinc-100;
+}
+
+
 .mainText {
   @apply bg-gray-300 p-2 my-5 font-[600] mx-auto w-fit hover:bg-blue-600 cursor-pointer transition-colors
 }
