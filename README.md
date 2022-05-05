@@ -107,10 +107,28 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... 
 ## Aula NODE JS:
 
 * no ts-config precisa colocar o `rootDir` e o `outDir`, além de ser possível utilizar uma versão mais atualizada do javascript(2020) no `target`.
+* Rotas:
+  ```js
+  // GET = Buscar informações
+  // POST = Cadastrar informações
+  // PUT = Atualizar informações de uma entidade
+  // PATCH = Atualizar UMA informaçõo única de uma entidade
+  ```
 * crie um script no package: `"dev": "ts-node-dev src/server.ts"`
 * Em desenvolvimento: SQLite, em produção: Postgress, utilizando o prisma (ORM)
 * Envio de Emails: Gmail(+/-), Mailgun, sparkpost, mailchimp
-  * mailtrap > testar emails (em desenvolvimento)
+  * [mailtrap](https://mailtrap.io/) > testar emails (em desenvolvimento)
+  * 
+* cors
+  ```
+  app.use(cors({
+    origin: "http://localhost:3000"
+  }))
+  ```
+  ou não passe o objeto e será aberto para todos, qualquer um podera utilizar da API
+
+
+<br/><br/>
 
 ### Requests Utilizadas:
 
@@ -127,8 +145,8 @@ fetch("http://localhost:3333/feedbacks", {
   headers: {
       'Content-type': 'application/json; charset=UTF-8'
   },
-}).then((res) => res.json()).then(console.log); 
-// retire o json se n retornar um json!
+}).then((res) => res).then(console.log); 
+//}).then((res) => res.json()).then(console.log); se o retorno tiver um json
 ```
 ---
 
@@ -153,9 +171,16 @@ fetch("http://localhost:3333/feedbacks", {
 * Envio de emails:
   * `npm install nodemailer` > blibioteca de emails
   * `npm install @types/nodemailer` > blibioteca de emails
-  *  
-* ``
-
+* Testes Automatizados (Jest)
+  * `npm install jest -D` > instala o jest
+  * `npx jest --init` > configura o jest (yes, yes, node, yes, v8, yes)
+  * `npm install ts-node -D` > typescript no jest
+  * `npm install @types/jest -D` > typescript no jest
+  * [SWC](https://swc.rs/docs/usage/jest) > `npm i -D jest @swc/jest` > Jest não entende arquivos tsc, então é necessário um compilador (ts-jest, babel), porém o swc é muito mais rapido, e pdoeria até mesmo rodar toda a aplicação utilizando ele. Siga os passos na Doc.
+  * `yarn test`
+  * /coverage/lcov-report/index.html > ver o quanto o teste está cobrindo do codigo
+* `npm install cors` > controle de segurança, definir quem pode consumir os dados 
+* `npm install @types/cors -D` > typescript
 
 ---
 
