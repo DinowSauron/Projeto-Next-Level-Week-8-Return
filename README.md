@@ -12,6 +12,7 @@
 
 <p align="center">
   <a href="#Aula-REACT-JS">React</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Aula-NODE-JS">Node JS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Aula-REACT-NATIVE">React Native</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="/LICENSE">Licença</a>
 </p>
@@ -30,9 +31,16 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... 
 ## Tecnologias Utilizadas:
 
 * ReactJS
+* Typescript
+* NodeJS
 * Vite
+* Express
+* Prisma
 * TailwindCSS
 * Headless UI > acessibilidade
+* html2canvas
+* phosphor-react
+* nodemailer
 
 
 ## Observações/Notas:
@@ -92,14 +100,62 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... 
 * `npm install html2canvas` > blibioteca para o screenshot
 * ``
 
----
-## Aula REACT NATIVE:
 
-* 
+
+
+---
+## Aula NODE JS:
+
+* no ts-config precisa colocar o `rootDir` e o `outDir`, além de ser possível utilizar uma versão mais atualizada do javascript(2020) no `target`.
+* crie um script no package: `"dev": "ts-node-dev src/server.ts"`
+* Em desenvolvimento: SQLite, em produção: Postgress, utilizando o prisma (ORM)
+* Envio de Emails: Gmail(+/-), Mailgun, sparkpost, mailchimp
+  * mailtrap > testar emails (em desenvolvimento)
+
+### Requests Utilizadas:
+
+```js
+// Create feedback
+// Coloque no console em http://localhost:3333
+
+fetch("http://localhost:3333/feedbacks", {
+  method: "POST",
+  body: JSON.stringify({    
+    "type": "BUG",
+    "comment": "Está tudo crazy!"
+  }),
+  headers: {
+      'Content-type': 'application/json; charset=UTF-8'
+  },
+}).then((res) => res.json()).then(console.log); 
+// retire o json se n retornar um json!
+```
+---
+
 
 ### Comandos Utilizados:
 
-* 
+* `cd server`
+* `npm init`
+* `npm i typescript @types/node ts-node-dev -D` > live-reload com typesscript
+* `npx tsc --init` > cria as config do typescript
+* `npx tsc` > gera o arquivo em javascript /dist
+* `yarn dev` > roda a aplicação
+* `npm i express` > express - rotas
+* `npm i @types/express -D` > tipagem do express
+* Add Prisma
+  * `npm i prisma -D` > instala o prisma
+  * `npm i @prisma/client` > prisma em produção
+  * `npx prisma init` > inicia o prisma
+  * Acesse [Prisma/Sqlite](https://www.prisma.io/docs/concepts/database-connectors/sqlite) e modifique seu `schema.prisma` e coloque a url no `.env` criado
+  * `npx prisma migrate dev` > migrar banco de dados em dev (dev/deploy) 
+  * `npx prisma studio` > visualizar os dados no seu banco
+* Envio de emails:
+  * `npm install nodemailer` > blibioteca de emails
+  * `npm install @types/nodemailer` > blibioteca de emails
+  *  
+* ``
+
 
 ---
 

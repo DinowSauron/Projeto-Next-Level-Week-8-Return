@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Possiveis ID's
+// 1,2,3,4 > se tiver uma como, como users/1, fica facil acessar todas as outras, bom para paginação, ruin para segurança
+// 7bb15db0-cc0a-11ec-9d64-0242ac120002 > metodo usado uuid
+// Snowflake
+
+model Feedback {
+  id String @id @default(uuid())
+
+  type       String
+  comment    String
+  screenshot String?
+
+  @@map("feedbacks")
+}
+
+// Tabelas
+// Colunas
+// Indices
