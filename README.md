@@ -61,7 +61,8 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana é u
 
 ### Iniciar Servidor
   * ``cd server``
-  * ``yarn dev``
+  * ``yarn dev`` > inicia o servidor
+  * `yarn prisma studio`
 
 <br/>
 
@@ -115,12 +116,12 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana é u
     }
     ```
 
-* `npm install phosphor-react` > icones utilizados
-* `npm install @headlessui/react` > acessibilidade
+* `npm install phosphor-react` > icones utilizados.
+* `npm install @headlessui/react` > acessibilidade.
 * `npm install -D @tailwindcss/forms` > tailwind para formulários (coloca nos plugins)
 * `npm install -D tailwind-scrollbar` > muda a scrollbar (coloque nos plugins)
-* `npm install html2canvas` > blibioteca para o screenshot
-* ``
+* `npm install html2canvas` > blibioteca para o screenshot.
+* `npm install axios` > requisições http.
 
 
 
@@ -238,6 +239,7 @@ fetch("http://localhost:3333/feedbacks", {
 * #NextLevel
 * #NeverStopLearning
 * #NewSkills
+* #StepByStep
 
 ## Licença:
 Note que este projeto está sob a licensa MIT. Veja o arquivo para mais detalhes: <a href="/LICENSE">LICENSE</a>
