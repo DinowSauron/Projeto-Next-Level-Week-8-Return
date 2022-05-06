@@ -63,6 +63,11 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana é u
   * ``cd server``
   * ``yarn dev`` > inicia o servidor
   * `yarn prisma studio`
+  * mude o provider `./prisma/schema.prisma` para o SQL (descomente a linha...)
+  * Deploy:
+    * ``yarn build`` > Converte arquivos Typescript para Javascript
+    * ``yarn start`` > Inicia apartir dos arquivos Javascript 
+    * Faça deploy da pasta ``./dist``
 
 <br/>
 

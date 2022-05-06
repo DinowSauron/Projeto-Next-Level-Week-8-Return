@@ -1,14 +1,20 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
+// SQL DATABASE:
+
+// datasource db {
+//   provider = "sqlite"
+//   url      = env("DATABASE_URL")
+// }
+
+// Prduction
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
 
 // Possiveis ID's
 // 1,2,3,4 > se tiver uma como, como users/1, fica facil acessar todas as outras, bom para paginação, ruin para segurança
