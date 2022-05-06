@@ -41,6 +41,8 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... 
 * html2canvas
 * phosphor-react
 * nodemailer
+* React Native
+* ExpoGo
 
 
 ## Observações/Notas:
@@ -185,10 +187,34 @@ fetch("http://localhost:3333/feedbacks", {
 ---
 
 
+## Aula REACT NATIVE:
+
+* expo
+
+
+### Comandos utilizados:
+
+* `cd mobile` 
+* Expo:
+  * `expo init mobile` > iniciaum projeto expo (blank typescript)
+  * `expo install expo-font @expo-google-fonts/NOME_DA_FONTE` > fonte no react (inter)
+  * `expo install expo-app-loading` > carregamento asyncrono de fontes
+  * `expo install react-native-svg` > utilizar svg nos projetos
+  * `expo start -c` > Inicia o projeto. `-c` limpa o cache
+* `yarn add phosphor-react-native` > icones react native
+* `yarn add react-native-iphone-x-helper` > lida com margins de baixo em telas
+* `expo install @gorhom/bottom-sheet@^4` > slides/arrastar telas
+  * `expo install react-native-reanimated react-native-gesture-handler` > dependencia do BottomSheet
+  * `plugins: ['react-native-reanimated/plugin']` > adicionar no babel
+  * importe o gesture handler no inicio do ``App.tsx``
+* ``
+
+ - 1:18min
 
 ## Desafios
 * #NextLevel
 * #NeverStopLearning
+* #NewSkills
 
 ## Licença:
 Note que este projeto está sob a licensa MIT. Veja o arquivo para mais detalhes: <a href="/LICENSE">LICENSE</a>
