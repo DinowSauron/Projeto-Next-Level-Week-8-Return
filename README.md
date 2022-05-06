@@ -18,7 +18,7 @@
 </p>
 
 
-O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... **[@Rocketseat](https://github.com/Rocketseat)** 
+O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana é um widget de enviar feedback para os usuários enviarem suas opinioes e relatar problemas ao navegar em seu site! evento oferecido pela **[@Rocketseat](https://github.com/Rocketseat)** 
 
 
 ### Fotos Da Aplicação:
@@ -58,7 +58,27 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana ... 
 
 ## Como Inicializar:
 
-...
+
+### Iniciar Servidor
+  * ``cd server``
+  * ``yarn dev``
+
+<br/>
+
+### Iniciar Front-end
+  * ``cd web``
+  * ``yarn dev``
+  
+<br/>
+
+### Iniciar Mobile
+  * ``cd mobile``
+  * Mudar o baseURL no `src/lib/api` para seu ipv4
+  * ``expo start``
+  * Acesse pelo aplicativo [Expo Go](https://expo.dev/client)
+
+
+
 
 
 ---
@@ -190,6 +210,7 @@ fetch("http://localhost:3333/feedbacks", {
 ## Aula REACT NATIVE:
 
 * expo
+* NUNCA UTILIZE DAS FUNÇÕES DO **REACT-NATIVE-GESTURE-HANDLER** pois estas funções geram um erro invisivel que atrapalha os emuladores, buga os codigos nas builds. simplesmente busque por outra opção ou veja se o modulo atualizou! 
 
 
 ### Comandos utilizados:
@@ -201,15 +222,17 @@ fetch("http://localhost:3333/feedbacks", {
   * `expo install expo-app-loading` > carregamento asyncrono de fontes
   * `expo install react-native-svg` > utilizar svg nos projetos
   * `expo start -c` > Inicia o projeto. `-c` limpa o cache
+  * `expo install expo-file-system` > lida com conversão de arquivo ex: (png > base64)
+  
 * `yarn add phosphor-react-native` > icones react native
 * `yarn add react-native-iphone-x-helper` > lida com margins de baixo em telas
 * `expo install @gorhom/bottom-sheet@^4` > slides/arrastar telas
   * `expo install react-native-reanimated react-native-gesture-handler` > dependencia do BottomSheet
   * `plugins: ['react-native-reanimated/plugin']` > adicionar no babel
   * importe o gesture handler no inicio do ``App.tsx``
-* ``
+* `yarn add react-native-view-shot` > blibioteca de screenshot
+* `yarn add axios` > requisições http
 
- - 1:18min
 
 ## Desafios
 * #NextLevel

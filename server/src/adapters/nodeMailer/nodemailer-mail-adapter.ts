@@ -1,6 +1,7 @@
 import { MailAdapter, SendMailData } from './../mail-adapter';
 import nodemailer from "nodemailer";
 
+// como é de testes, tanto faz...
 const transport = nodemailer.createTransport({
   host: "smtp.mailtrap.io",
   port: 2525,
