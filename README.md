@@ -63,11 +63,15 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana é u
   * ``cd server``
   * ``yarn dev`` > inicia o servidor
   * `yarn prisma studio`
-  * mude o provider `./prisma/schema.prisma` para o SQL (descomente a linha...)
-  * Deploy:
+  * SQLite:
+    * mude o provider `./prisma/schema.prisma` para o SQL (descomente a linha...)
+    * ``npx prisma migrate dev`` > Refaça as migrações no banco de dados, pois elas salvão o tipo de banco de dados (sqlite, postgress,mongo, etc).
+  * Deploy (Railway): 
     * ``yarn build`` > Converte arquivos Typescript para Javascript
     * ``yarn start`` | `npm run start` > Inicia apartir dos arquivos Javascript 
-    * Faça deploy da pasta ``./dist``
+    * ``npx prisma migrate dev`` > faz as migrações no banco de dados
+    * Faça deploy da pasta ``./dist``, normalmente o site irá fazer a build automaticamnete, podendo ser possível realizar o deploy de toda a aplicação, nao somente a pasta dist!
+    * Start Commend: `npx prisma migrate deploy && npm run start` > executa o servidor depois de fazer as migrations no banc de dados
 
 <br/>
 
