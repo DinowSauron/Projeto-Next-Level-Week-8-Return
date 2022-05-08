@@ -21,6 +21,7 @@ export function ScreenshotButton({onSheenshotHasTaken, screenshot}: ScreenshotBu
       backgroundColor: "#ffffff",
       // windowWidth: 500
     });
+    // https://html2canvas.hertzen.com/configuration
     const base64image = canvas.toDataURL("image/png");
 
     onSheenshotHasTaken(base64image);
