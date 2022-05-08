@@ -21,9 +21,8 @@
 O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana é um widget de enviar feedback para os usuários enviarem suas opinioes e relatar problemas ao navegar em seu site! evento oferecido pela **[@Rocketseat](https://github.com/Rocketseat)** 
 
 
-### Fotos Da Aplicação:
-
-### Projeto em andamento...
+Acesse a plicação em funcionamento!
+Link: [https://nlw8return.vercel.app/](https://nlw8return.vercel.app/)
 
 ---
 
@@ -71,7 +70,7 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana é u
     * ``yarn start`` | `npm run start` > Inicia apartir dos arquivos Javascript 
     * ``npx prisma migrate dev`` > faz as migrações no banco de dados
     * Faça deploy da pasta ``./dist``, normalmente o site irá fazer a build automaticamnete, podendo ser possível realizar o deploy de toda a aplicação, nao somente a pasta dist!
-    * Start Commend: `npx prisma migrate deploy && npm run start` > executa o servidor depois de fazer as migrations no banc de dados
+    * Start Command: `npx prisma migrate deploy` > faz as migrations no banc de dados
 
 <br/>
 
@@ -249,6 +248,11 @@ fetch("http://localhost:3333/feedbacks", {
 * #NeverStopLearning
 * #NewSkills
 * #StepByStep
+
+## evento?
+
+11:40:46
+11:34:40
 
 ## Licença:
 Note que este projeto está sob a licensa MIT. Veja o arquivo para mais detalhes: <a href="/LICENSE">LICENSE</a>
