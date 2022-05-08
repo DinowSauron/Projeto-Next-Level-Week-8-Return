@@ -24,6 +24,20 @@ O Projeto da **[Next Level Week](https://nextlevelweek.com/)** Desta semana é u
 Acesse a plicação em funcionamento!
 Link: [https://nlw8return.vercel.app/](https://nlw8return.vercel.app/)
 
+
+<a href="https://github.com/DinowSauron/Projeto-Next-Level-Week-7-Heat" target="_blank">
+    <img src="./pictures/main.png" width="100%" alt="">
+    <p style="display: flex; margin-top: 20px" >
+        <img src="./pictures/loged.png" width="49%" alt="">
+        <img src="./pictures/login.png" width="49%" alt="">
+    </p>
+    <p style="display: flex; margin-top: 20px">
+        <img src="./pictures/phone2.png" width="32%" alt="">
+        <img src="./pictures/phone1.png" width="32%" alt="">
+        <img src="./pictures/phone3.png" width="32%" alt="">
+    </p>  
+    <img src="./pictures/terminal.png" width="100%" alt="">
+</a>
 ---
 
 
@@ -249,10 +263,9 @@ fetch("http://localhost:3333/feedbacks", {
 * #NewSkills
 * #StepByStep
 
-## evento?
-
-11:40:46
-11:34:40
+* Por algum motivo durate as aulas 2 relogios aqui de casa pararam no mesmo horario, então decidi anotar essa atividade paranormal '-'
+    * 11:40:46
+    * 11:34:40
 
 ## Licença:
 Note que este projeto está sob a licensa MIT. Veja o arquivo para mais detalhes: <a href="/LICENSE">LICENSE</a>

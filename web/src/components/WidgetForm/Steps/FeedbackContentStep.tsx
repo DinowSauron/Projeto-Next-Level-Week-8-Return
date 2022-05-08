@@ -61,7 +61,6 @@ export function FeedbackContentStep({feedbackType, onFeedbackSent, onFeedbackRes
     </header>
     <form className="mt-4 w-full" onSubmit={handleSubmitFeedback}>
       <textarea 
-        
         onChange={event => setComment(event.target.value)}
         className="min-w-[304px] w-full min-h-[112px] text-sm text-zinc-100 placeholder-zinc-400 border-zinc-600 bg-transparent rounded-md focus:border-brand-500 focus:ring-brand-500 focus:ring-1 focus:outline-none resize-none scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin overflow-hidden"
         placeholder="Conte com detalhes o que está acontecendo..."
