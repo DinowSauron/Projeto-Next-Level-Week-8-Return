@@ -5,9 +5,9 @@ import { WidgetForm } from "./WidgetForm";
 
 
 export function Widget() {
-
+  // data-html2canvas-ignore - ignore from picture
   return (
-    <Popover className="absolute flex flex-col items-end bottom-4 right-4 md:bottom-10 md-right-10">
+    <Popover  className="absolute flex flex-col items-end bottom-4 right-4 md:bottom-10 md-right-10">
 
       <Popover.Panel>
         <WidgetForm/>

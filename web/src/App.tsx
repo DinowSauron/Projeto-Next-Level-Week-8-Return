@@ -4,10 +4,12 @@ import { Widget } from './components/Widget';
 export function App() {
 
   return (
-    <div className='BackgroundImage'>
-      <Widget/>
-
-    </div>
+    <>
+      <span data-html2canvas-ignore className='BackgroundImage'></span>
+      <div>
+        <Widget/>
+      </div>
+    </>
   )
 }
 

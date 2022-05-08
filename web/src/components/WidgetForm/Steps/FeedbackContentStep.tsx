@@ -26,6 +26,7 @@ export function FeedbackContentStep({feedbackType, onFeedbackSent, onFeedbackRes
 
     setIsSendingFeedback(true);
     e.preventDefault();
+    console.log(screenshot)
 
     await api.post("/feedbacks", {
       type: feedbackType,

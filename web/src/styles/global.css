@@ -11,19 +11,22 @@ body {
   @apply bg-gray-300 p-2 my-5 font-[600] mx-auto w-fit hover:bg-blue-600 cursor-pointer transition-colors
 }
 
-#root {
-  width: 100vw;
-  height: 100vh;
-  
-  background: linear-gradient(#121214 0%,#2C165C 25%, #881656 80%, #CE3937 110%);
-}
 
 #root >div {
   width: 100vw;
   height: 100vh;
 
+
+  /* background: linear-gradient(#121214 0%,#2C165C 25%, #881656 80%, #CE3937 110%); */
+}
+
+#root span.BackgroundImage {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+
   background-image: url(../assets/astronauta.png);
   background-repeat: no-repeat;
-  background-size: 50vw;
+  background-size: 30vw;
   background-position: center; 
 }
