@@ -17,7 +17,7 @@ body {
   height: 100vh;
 
 
-  /* background: linear-gradient(#121214 0%,#2C165C 25%, #881656 80%, #CE3937 110%); */
+  background: linear-gradient(#121214 0%,#2C165C 25%, #881656 80%, #CE3937 110%);
 }
 
 #root span.BackgroundImage {

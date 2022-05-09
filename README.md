@@ -36,8 +36,8 @@ Link: [https://nlw8return.vercel.app/](https://nlw8return.vercel.app/)
     <p style="display: flex; margin-top: 5px;" >
         <img src="./images/feedback-options.png" width="24.6%" alt="">
         <img src="./images/idea-option.png" width="24.6%" alt="">
-        <img src="./images/idea-option.png" width="24.6%" alt="">
-        <img src="./images/idea-option.png" width="24.6%" alt="">
+        <img src="./images/idea-option-sending.png" width="24.6%" alt="">
+        <img src="./images/feedback-send.png" width="24.6%" alt="">
     </p>
     <hr/>
     <h3>Server (Database | Email):</h3>

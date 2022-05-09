@@ -17,13 +17,11 @@ export function ScreenshotButton({onSheenshotHasTaken, screenshot}: ScreenshotBu
   async function handleTakeScreenshot() {
     setIsTakingScreenshot(true);
     const canvas = await html2canvas(document.querySelector('html')!,{
-      scale: 0.65,
-      backgroundColor: "#ffffff",
-      // windowWidth: 500
+      scale: 0.85,
     });
-    // https://html2canvas.hertzen.com/configuration
     const base64image = canvas.toDataURL("image/png");
-
+    
+    // https://html2canvas.hertzen.com/configuration
     onSheenshotHasTaken(base64image);
     setIsTakingScreenshot(false);
   }
